@@ -7,6 +7,14 @@ import lejos.hardware.port.Port;
 import lejos.robotics.SampleProvider;
 import lejos.hardware.Button;
  
+/**
+ * This class implements two controllers that provide two
+ * different methods for wall following for the ev3 robot - 
+ * the BangBang
+ * 
+ * @author Bijan Sadeghi
+ *
+ */
 public class WallFollowingLab {
 
 	// Parameters: adjust these for desired performance
@@ -37,6 +45,13 @@ public class WallFollowingLab {
 
 	// Main entry point - instantiate objects used and set up sensor
 
+	/**
+	 * The main methods sets up the sensors and motors,
+	 * and it allows us to start either the BangBangController
+	 * or the PController if the left or right button is pressed.
+	 * 
+	 * @param args not used
+	 */
 	public static void main(String[] args) {
 
 		int option = 0;
